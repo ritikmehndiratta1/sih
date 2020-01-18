@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Alumni network</title>
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="active" href="#"><i class="fa fa-fw fa-home"></i>About us</a>
+      <a href="#"><i class="fa fa-fw fa-search"></i>Our community</a>
+      <a href="#"><i class="fa fa-fw fa-envelope"></i>Blogs</a>
+      <a href="#"><i class="fa fa-fw fa-user"></i>Our team</a>
+      <a  href="#about" style="float:right">Login</a>
+      <a  href="#about" style="float:right">Sign up</a>
+    </div>
+    <div class="box">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/71UwTLELGWL._SX466_.jpg" class="logo">
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+      <div class="numbertext" >1 / 3</div>
+        <img src="http://www.designshock.com/wp-content/uploads/2014/08/1_thumb1.jpg" width = "100%" height ="500" class="image1">
+      <div class="text">first</div></div>
+    <div class="mySlides fade">
+    <div class="numbertext" >2 / 3</div>
+      <img src="https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252__340.jpg" width = "100%" height="500px" class="image2">
+          <div class="text">second</div>
+    </div>
+    <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+      <img src="https://i.pinimg.com/originals/79/bd/fa/79bdfaed82cd091e1ba5b625e0c5976d.jpg" width="100%" height="500px"  class="image3">
+      <div class="text">third</div>
+    </div>
+
+      </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+    <div class="notif">
+      <h3 class="h3"><aling="centre">Notifications</align></h3>
+    </div>
+    <div class="main_text">
+
+    </div>
+  </body>
+</html>
